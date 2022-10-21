@@ -1,0 +1,37 @@
+
+<!-- <h1>CSS-only Carousel</h1>
+
+<p>This carousel is created with HTML and CSS only.</p> -->
+
+<section class="carousel" aria-label="Gallery" *ngIf="images.length >= 1">
+    <ol class="carousel__viewport" >
+      <ng-container *ngFor="let item of images; let i=index">
+
+        {{i}}
+        {{images.length}}
+          <li [id]="'carousel__slide'+i"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper fill">
+            <img [src]="item" alt="">
+          <a [href]="i == 0 ? '#carousel__slide'+(images.length-1) :'#carousel__slide'+(i-1) "
+             class="carousel__prev"><fa-icon [icon]="faCircleChevronLeft"></fa-icon></a>
+          <a [href]="i == (images.length-1) ? '#carousel__slide0' : '#carousel__slide'+(i+1)"
+             class="carousel__next"><fa-icon [icon]="faCircleChevronRight"></fa-icon></a>
+        </div>
+      </li>
+      </ng-container>
+      
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+          <ng-container *ngFor="let item of images; let i=index">
+              <li class="carousel__navigation-item">
+                  <a [href]="'#carousel__slide'+(i)"
+                     class="carousel__navigation-button">Go to slide {{i}}</a>
+                </li>
+          </ng-container>
+       
+      </ol>
+    </aside>
+  </section>

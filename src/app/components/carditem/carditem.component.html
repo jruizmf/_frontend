@@ -1,0 +1,14 @@
+
+<div [style]="'order: '+order+'; flex: 0 0 33.333333%'" (click)="navigateTo(link)">
+  <main *ngIf="type == 0">
+    <div class='card' >
+       <img [src]="icon" alt="" style="position:absolute; align-self: center;" height="180px">
+      <div class='info' >
+        <h1 class='title'>{{title}}</h1>
+        <p class='description'>{{content}}</p>
+      </div>
+    </div>
+  </main>
+  
+</div>
+  

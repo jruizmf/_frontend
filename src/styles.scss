@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0 !important;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    padding:2vh 3vw;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+   
+}
+.input{
+    border: 1px solid #de8430;
+    padding: 0.7vh;
+    border-radius: 2%;
+    margin-bottom: 5vh;
+}
+.btn{
+    border: 1px solid #de8430;
+    font-weight: 700;
+    padding: 1vh 2vw;
+    border-radius: 2%;
+    margin-bottom: 2vh;
+    background-color: transparent;
+    color: #de8430;
+}
+.header-title{
+    color: #de8430;
+    font-size: 3.7vh;
+    padding: 1vh 2vw;
+}
+h1.header-title{
+    color: #de8430;
+    font-size: 5vh;
+    font-weight: 100;
+    padding: 1.0vh 1.5vw;
+}
+
+.label{
+    color: #de8430;
+    padding: 0.7vh;
+}

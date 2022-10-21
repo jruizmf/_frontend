@@ -1,0 +1,29 @@
+<nav class="nav navbar">
+    <div class="logo-container">
+        <a routerLink="/"><img class="logo" src="./../../../assets/img/logo.png" alt="logo"></a>
+    </div>
+    <div class="navigation-container" >
+        <ul class="nav-list" *ngIf="!logged; else loggedIn">
+            <li *ngIf="router.url !== '/login'" class="nav-link" ><a routerLink="/login">Login</a></li>
+            <li *ngIf="router.url !== '/register'" class="nav-link"><a routerLink="/register">Register</a></li>
+            
+            
+        </ul>
+        <ng-template #loggedIn>
+            <ul class="nav-list">
+                <li class="nav-link-config" ><a ><fa-icon [icon]="faGear"></fa-icon></a>
+                    <div class="dropdown-content">
+                        <ul style="list-style: none;">
+                            <li>Groups</li>
+                            <li>Chat</li>
+                            <li>Profile</li>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+        </ng-template>
+    </div>
+    
+</nav>

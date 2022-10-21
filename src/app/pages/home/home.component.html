@@ -1,0 +1,5 @@
+<div style="display: inline-flex; margin: 3vh 8vw; flex-wrap: wrap;">
+    <div *ngFor="let item of cardItems" >
+        <app-carditem [order]="item.order" [title]="item.title" [content]="item.description" [link]="item.url" [icon]="item.icon"></app-carditem>
+    </div>
+</div>

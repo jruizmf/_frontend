@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="login-container">
+        <div class="login-content">
+            <div>
+                <h2 class="header-title">Register</h2>
+            </div>
+            <div>
+                <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+                    <div>
+                        <label for="username" class="label">Username: </label>
+                        <input type="text" name="username" class="input" ngModel>
+                        
+                    </div>
+              
+                    <div>
+                        <label for="password" class="label"> Password: </label>
+                        <input type="password" name="password" class="input" ngModel>
+                    </div>
+                    <div>
+                        <label for="confirmPassword" class="label">Confirm Pass: </label>
+                        <input type="password" name="confirmPassword" class="input" ngModel>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
