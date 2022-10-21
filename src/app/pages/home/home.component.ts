@@ -6,12 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  images:Array<any> = [];
+
   cardItems:Array<any> = [];
   constructor() { }
 
   ngOnInit(): void {
-    this.images= ['./../../../assets/img/plato_comida_japonesa.jpg', './../../../assets/img/sushi-comida.jpg', './../../../assets/img/tonkatsu-comida.jpg']
     this.cardItems = [
       {
         order:1, 

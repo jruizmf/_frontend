@@ -1,9 +1,18 @@
 <section >
-    <div style="flex: wrap;"></div>
-    <div [style]="'order: 1; flex: 0 0 66.666666%'" >
+    <div style="display: inline-flex; flex: wrap;">
+        <div [style]="'order: 1; flex: 0 0 66.666666%'" >
+            <h1>Noticias</h1>
+                <div style="display: inline-flex; flex: wrap;">
 
-    </div>
-    <div [style]="'order: 1; flex: 0 0 33.333333%; align-self:flex-end'" >
-        <app-useritem></app-useritem>
+                
+                
+                <div *ngFor="let item of cardItems" >
+                    <app-carditem [order]="item.order" [title]="item.title" [content]="item.description" [link]="item.url" [icon]="item.icon"></app-carditem>
+                </div>
+            </div>
+        </div>
+        <div [style]="'order: 2; flex: 0 0 33.333333%;'" >
+            <app-useritem></app-useritem>
+        </div>
     </div>
 </section>

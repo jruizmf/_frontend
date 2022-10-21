@@ -217,3 +217,29 @@ a.btn-transparent-green {
     top: calc(50% - 20px);
     opacity: 0.4;
 }
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    font-size: 2vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1 !important;
+    color: #de8430 !important;
+    align-items: flex-start;
+  }
+  
+  .dropdown-content ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  .dropdown-content ul li {
+    padding: 2vh 1vw;
+    text-align: left;
+  }
+  .dropdown-content ul li:hover {
+    font-weight: 800;
+    border-bottom: 1px solid #de8430 !important;
+  }

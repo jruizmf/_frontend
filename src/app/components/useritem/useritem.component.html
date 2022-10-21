@@ -11,7 +11,19 @@
                            <p style="font-size: 1.6vh;">{{organization}}</p>    
                           </div>
                           <div style="order: 3; padding: 1.3vh;">
-                            <img src="./../../../assets/icons/burger-icon.svg" height="40px" alt="">
+                            <div class="nav-link-config" (click)="changeAttribute()">
+                                <img src="./../../../assets/icons/burger-icon.svg" height="40px" alt="">
+                            </div>
+                            <div class="dropdown-content" [style]="'display:'+attribute+''">
+                                <ul style="list-style: none;">
+                                    <li>Groups</li>
+                                    <li>Chat</li>
+                                    <li>Profile</li>
+                                    <li>Logout</li>
+                                </ul>
+                            </div>
+
+                           
                         </div>
                       </div>
                       <!-- <div class="color-block-bottom">
